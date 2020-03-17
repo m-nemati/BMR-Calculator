@@ -12,8 +12,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /* ***** Go to BMR Explain Activity ***** */
+        // Set Title
+        title = "محاسبگر شاخص BMR"
 
+        /* ***** Go to BMR Explain Activity ***** */
+        btnAboutBMR.setOnClickListener {
+
+            val intentBmr = Intent(this, bmrActivity::class.java)
+            startActivity(intentBmr)
+        }
         /* ***** Go to SchoolHelp Site ***** */
         tvSiteUrl.setOnClickListener {
 

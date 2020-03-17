@@ -10,7 +10,7 @@
     <ImageView
         android:src="@drawable/bmrpic"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="70dp"/>
 
     <EditText
         android:id="@+id/edtWeigh"
@@ -19,7 +19,7 @@
         android:hint="@string/eW"
         android:layout_gravity="center"
         android:layout_width="300dp"
-        android:layout_height="75dp"/>
+        android:layout_height="60dp"/>
     <EditText
         android:id="@+id/edtHeight"
         android:textSize="24sp"
@@ -27,7 +27,7 @@
         android:hint="@string/eH"
         android:layout_gravity="center"
         android:layout_width="300dp"
-        android:layout_height="75dp"/>
+        android:layout_height="60dp"/>
     <EditText
         android:id="@+id/edtAge"
         android:textSize="24sp"
@@ -35,10 +35,11 @@
         android:hint="@string/eA"
         android:layout_gravity="center"
         android:layout_width="300dp"
-        android:layout_height="75dp"/>
+        android:layout_height="60dp"/>
     <RadioGroup
         android:layout_gravity="center"
         android:orientation="horizontal"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <RadioButton
@@ -64,36 +65,41 @@
         android:textSize="24sp"
         android:text="@string/btnCalc"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="75dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"/>
     <TextView
         android:text="مقدار متابولیوسم:"
         android:textSize="24sp"
         android:layout_gravity="center"
         android:textDirection="rtl"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"/>
     <TextView
         android:text="کالری مورد نیاز روزانه:"
         android:textSize="24sp"
         android:layout_gravity="center"
         android:textDirection="rtl"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btnAboutBMR"
         android:textSize="24sp"
         android:text="@string/btnAboutBMR"
         android:textDirection="rtl"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="75dp"/>
+        android:layout_width="300dp"
+        android:layout_height="60dp"/>
     <TextView
         android:id="@+id/tvSiteUrl"
         android:text="@string/site"
         android:textSize="24sp"
         android:textColor="@color/lightBlue"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
