@@ -71,19 +71,33 @@
         android:layout_marginTop="20dp"
         android:layout_width="300dp"
         android:layout_height="60dp"/>
-    <TextView
-        android:text="مقدار متابولیوسم:"
+
+    <Button
+        android:id="@+id/btnClear"
         android:textSize="24sp"
+        android:text="@string/btnClear"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/tvShowTxt"
+        tools:text="مقدار متابولیوسم:"
+        android:textSize="20sp"
         android:layout_gravity="center"
         android:textDirection="rtl"
+        android:gravity="center"
         android:layout_marginTop="10dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"/>
     <TextView
-        android:text="کالری مورد نیاز روزانه:"
+        android:id="@+id/tvCorollary"
+        tools:text="مقدار"
         android:textSize="24sp"
         android:layout_gravity="center"
         android:textDirection="rtl"
+        android:gravity="center"
         android:layout_marginTop="10dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"/>

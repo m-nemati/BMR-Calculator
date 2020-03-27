@@ -27,14 +27,25 @@ class MainActivity : AppCompatActivity() {
             try {
                 // Save input data to variables
                 val weight: Double = edtWeigh.text.toString().toDouble()
-                val height: Double = edtHeight.text.toString().toDouble() / 100
+                val height: Double = edtHeight.text.toString().toDouble()
                 val age: Double = edtAge.text.toString().toDouble()
+                var bmr_Rate: Int = 0
 
                 if (rbMen.isChecked) {
+
+                    bmr_Rate = (66.47 + ( 13.75 * weight) + ( 5.003 * height ) - ( 6.755 * age )).toInt()
+                    tvShowTxt.text = "کالری مورد نیاز بدن شما در 24 ساعت:"
+                    tvCorollary.text = bmr_Rate.toString()
+                  //  var bmrMan = 66.47 + ( 13.75 * weight) + ( 5.003 * height ) - ( 6.755 * age );
+                  //  var bmrWoman = 655.1 + ( 9.563 * weight ) + ( 1.850 * height ) - ( 4.676 * age );
+
 
                 }
                 else if (rbWomen.isChecked) {
 
+                    bmr_Rate = (655.1 + ( 9.563 * weight) + ( 1.850 * height ) - ( 4.676 * age )).toInt()
+                    tvShowTxt.text = "کالری مورد نیاز بدن شما در 24 ساعت:"
+                    tvCorollary.text = bmr_Rate.toString()
                 }
                 else {
                     Toast.makeText(this, "لطفا جنسیت خود را تعیین کنید", Toast.LENGTH_SHORT).show()
@@ -44,6 +55,16 @@ class MainActivity : AppCompatActivity() {
             catch (ex: Exception) {
                 Toast.makeText(this, "مقادیر وزن، قد و سن را درست وارد نمایید.", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        /* ***** Clear Button ***** */
+        btnClear.setOnClickListener {
+            tvCorollary.text = ""
+            tvShowTxt.text = ""
+            edtAge.setText("")
+            edtHeight.setText("")
+            edtWeigh.setText("")
+            edtWeigh.requestFocus()
         }
         /* ***** Go to BMR Explain Activity ***** */
         btnAboutBMR.setOnClickListener {

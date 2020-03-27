@@ -9,4 +9,5 @@
     <string name="btnAboutBMR">BMR چیست؟</string>
     <string name="site">SchoolHelp.ir</string>
     <string name="btnBack">بازگشت</string>
+    <string name="btnClear">پاک کردن</string>
 </resources>
