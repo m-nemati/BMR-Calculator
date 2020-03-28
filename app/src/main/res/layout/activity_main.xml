@@ -88,6 +88,7 @@
         android:layout_gravity="center"
         android:textDirection="rtl"
         android:gravity="center"
+        android:textColor="@color/green"
         android:layout_marginTop="10dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"/>
@@ -97,6 +98,7 @@
         android:textSize="24sp"
         android:layout_gravity="center"
         android:textDirection="rtl"
+        android:textColor="@color/red"
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:layout_width="300dp"

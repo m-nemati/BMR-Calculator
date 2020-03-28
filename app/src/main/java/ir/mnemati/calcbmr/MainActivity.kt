@@ -53,7 +53,14 @@ class MainActivity : AppCompatActivity() {
 
             }
             catch (ex: Exception) {
-                Toast.makeText(this, "مقادیر وزن، قد و سن را درست وارد نمایید.", Toast.LENGTH_SHORT).show()
+
+                Toast.makeText(this, "مقادیر وزن، قد و سن را درست وارد نمایید.", Toast.LENGTH_LONG).show()
+                tvCorollary.text = ""
+                tvShowTxt.text = ""
+                edtAge.setText("")
+                edtHeight.setText("")
+                edtWeigh.setText("")
+                edtWeigh.requestFocus()
             }
         }
 
